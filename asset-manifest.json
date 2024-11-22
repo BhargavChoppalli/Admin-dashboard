@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/BhargavChoppalli/Admin-dashboard.git/static/css/main.e2686cb5.css",
+    "main.js": "/BhargavChoppalli/Admin-dashboard.git/static/js/main.a1a756bf.js",
+    "static/js/453.ed3810f9.chunk.js": "/BhargavChoppalli/Admin-dashboard.git/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/BhargavChoppalli/Admin-dashboard.git/index.html",
+    "main.e2686cb5.css.map": "/BhargavChoppalli/Admin-dashboard.git/static/css/main.e2686cb5.css.map",
+    "main.a1a756bf.js.map": "/BhargavChoppalli/Admin-dashboard.git/static/js/main.a1a756bf.js.map",
+    "453.ed3810f9.chunk.js.map": "/BhargavChoppalli/Admin-dashboard.git/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2686cb5.css",
+    "static/js/main.a1a756bf.js"
+  ]
+}
