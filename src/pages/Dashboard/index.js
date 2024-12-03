@@ -6,7 +6,7 @@ import { getRecentOrders } from "../../API";
 
 function Dashboard() {
   return (
-    <div>
+    <Space size={20} direction="vertical">
       <Typography.Title level={3}>Dashboard</Typography.Title>
       <Space direction="horizontal">
       <DashboardCard  icon = {<ShoppingCartOutlined style={{
@@ -36,12 +36,12 @@ function Dashboard() {
          boxShadow: "rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em",
          }}/>}  title = {"Revenue"}   value = {12345}/>
       </Space>
-      <div>
+    
       <Space>
         <RecentOrders/>
       </Space>
-      </div>
-    </div>
+      </Space>
+     
   )
 }
 
@@ -72,6 +72,8 @@ function RecentOrders(){
   }, [])
 
   return(
+    <>
+    <Typography.Text>RecentOrders</Typography.Text>
     <Table
     columns={[
       {
@@ -94,6 +96,7 @@ function RecentOrders(){
     loading = {loading}
     dataSource = {dataSource}
     ></Table>
+    </>
   );
 }
 

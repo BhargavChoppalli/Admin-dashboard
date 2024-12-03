@@ -6,7 +6,7 @@ export const getRecentOrders = () => {
         {
           id: 1,
           title: "iPhone 15 Pro Max",
-          quantity: 2,
+          quantity: 1,
           price: 1500,
           discountedPrice: 1200,
         },
@@ -14,8 +14,8 @@ export const getRecentOrders = () => {
           id: 2,
           title: "Samsung ear pods",
           quantity: 1,
-          price: 1300,
-          discountedPrice: 1150,
+          price: 350,
+          discountedPrice: 350,
         },
         {
           id: 3,
@@ -31,7 +31,7 @@ export const getRecentOrders = () => {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(mockData); // Simulate the response with mock data
-      }, 1000); // Simulate delay of 1 second
+      }, 100); // Simulate delay of 1 second
     });
   };
   
