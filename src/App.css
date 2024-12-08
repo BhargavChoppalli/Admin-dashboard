@@ -1,151 +1,66 @@
-/* Basic Layout for App */
-.App {
+.App{
     display: flex;
     flex-direction: column;
-    width: 100vw; /* Use viewport width for full width */
-    height: 100vh; /* Use viewport height for full height */
+    width: 100wh;
+    height: 100vh;
 }
 
-/* Header Styles */
-.AppHeader {
+.AppHeader{
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 4px 20px 4px 12px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    
+    
 }
-
-.AppHeader h4 {
+.AppHeader h4{
     color: rgb(47, 47, 226);
+    
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
+
+
 }
 
-/* Footer Styles */
-.AppFooter {
+.AppFooter{
     height: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(0,0,0,0.15);
 }
 
-/* Side Menu and Page Content Layout */
-.SideMenuPageContent {
+
+.SideMenuPageContent{
     display: flex;
     flex: 1;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-wrap: wrap; /* Allow content to wrap on small screens */
+    background-color: rgba(104, 103, 103, 0.15);
+    
+    
 }
 
-/* Side Menu Styles */
-.SideMenu {
-    flex: 1;
-    max-width: 250px; /* Side menu will have a maximum width */
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 8px;
+.SideMenu{
+    height: 100%;
+    
 }
 
-/* Page Content Styles */
-.PageContent {
-    flex: 3; /* Take up 3 times more space than the side menu */
+.SideMenuVertical{
+    height: 100%;
+}
+
+.PageContent{
     padding-left: 12px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow-y: auto;
 }
 
-/* Card Styles */
-.Card {
+.Card{
+    
     margin-right: 30px;
     box-shadow: rgba(3, 3, 5, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
-/* User Styles */
-.user {
-    margin-left: 10px;
-}
 
-/* Mobile-First Styles */
-@media (max-width: 767px) {
-    /* App layout */
-    .App {
-        flex-direction: column;
-    }
 
-    /* Side menu and page content */
-    .SideMenuPageContent {
-        flex-direction: column; /* Stack side menu and page content vertically on small screens */
-        padding: 10px;
-    }
-
-    /* Side Menu */
-    .SideMenu {
-        width: 100%; /* Side menu will take full width on small screens */
-        margin-bottom: 20px; /* Add margin between the side menu and page content */
-    }
-
-    /* Page Content */
-    .PageContent {
-        width: 100%; /* Page content will take full width */
-        padding-left: 0; /* Remove left padding */
-    }
-
-    /* AppHeader */
-    .AppHeader {
-        flex-direction: column; /* Stack header items vertically on small screens */
-        align-items: center;
-    }
-
-    /* AppFooter */
-    .AppFooter {
-        flex-direction: column; /* Stack footer items vertically on small screens */
-        align-items: center;
-    }
-}
-
-/* Tablet and Larger Screens */
-@media (min-width: 768px) {
-    /* App layout */
-    .App {
-        flex-direction: column;
-    }
-
-    /* Side Menu and Page Content */
-    .SideMenuPageContent {
-        flex-direction: row; /* Side by side layout for larger screens */
-    }
-
-    /* Side Menu */
-    .SideMenu {
-        width: 250px; /* Fixed width for side menu */
-        margin-right: 20px; /* Add space between side menu and page content */
-    }
-
-    /* Page Content */
-    .PageContent {
-        flex: 1; /* Allow page content to take up remaining space */
-    }
-}
-
-/* Large Screens (Desktops and larger tablets) */
-@media (min-width: 1024px) {
-    .App {
-        flex-direction: row; /* Change layout to row for extra-large screens */
-    }
-
-    .SideMenuPageContent {
-        flex-direction: row; /* Keep side menu and content side by side */
-    }
-
-    .SideMenu {
-        width: 300px; /* Increase side menu width for large screens */
-    }
-
-    .PageContent {
-        flex: 3; /* Increase the content's width */
-    }
-}
